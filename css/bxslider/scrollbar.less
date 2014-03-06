@@ -1,0 +1,66 @@
+.scroller {
+    width: auto;
+    clear: both;
+
+    .viewport {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .overview {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .thumb .end,
+    .thumb {
+        background-color: @scrollBarColor;
+         -webkit-border-radius: 4px; 
+        -moz-border-radius: 4px; 
+        border-radius: 4px;
+    }
+    .scrollbar {
+        position: relative;
+        float: right;
+        width: 8px;
+        -webkit-border-radius: 4px; 
+        -moz-border-radius: 4px; 
+        border-radius: 4px;
+
+    }
+    .track {
+        background-color: @scrollBarSecondColor;
+        height: 100%;
+        width: 8px;
+        position: relative;
+         -webkit-border-radius: 4px; 
+        -moz-border-radius: 4px; 
+        border-radius: 4px;
+    }
+    .thumb {
+        height: 20px;
+        width: 8px;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+    .thumb .end {
+        overflow: hidden;
+        height: 5px;
+        width: 8px;
+    }
+    .disable {
+        display: none;
+    }
+
+}
+
+.noSelect {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
